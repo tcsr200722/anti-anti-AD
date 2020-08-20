@@ -15,6 +15,10 @@ Update：
 - 反复横跳的[gentlyxu语录总结](Quotations.md)
 - [其它质疑的声音](/OthersVoice.md) (仅限在404之前被记录下的)  
 业余整理难免疏漏，欢迎通过issue投稿或直接发起PR，推荐使用[Archive](https://archive.md/)[服务](https://web.archive.org/)存档相关页面
+- 相关讨论：
+  - https://github.com/AdguardTeam/AdGuardHome/issues/1988
+  - https://github.com/collinbarrett/FilterLists/issues/1674
+  - https://github.com/badmojr/1Hosts/issues/22
 
 TLDR（太长不看版）：
 --
@@ -92,14 +96,112 @@ TLDR（太长不看版）：
 - [vokins/yhosts](https://github.com/vokins/yhosts)  已由[VeleSila/yhosts](https://github.com/VeleSila/yhosts)接手
 - [由 NextDNS 收集的各种用途的列表](https://github.com/nextdns/metadata/tree/master/privacy/blocklists)  也可在[NextDNS控制台](https://my.nextdns.io/xxxxxx/privacy)中查看
 
+
 ***若GitHub访问受限可使用具有中国大陆地区网络的[jsDelivr](http://www.jsdelivr.com/)加速列表源***  
 *使用方法：https://cdn.jsdelivr.net/gh/用户名/仓库名@分支/文件路径*
-
 
 **不在墙内的用户更推荐直接使用[NextDNS](https://nextdns.io/)，更加方便快捷，进可按需定制，退可一键傻瓜化，其中也包含了众多不同用途的屏蔽列表可供按需求自由选择，当然也可以单独拿出来在其它地方使用。**  
 > https://github.com/nextdns/metadata/tree/master/privacy/blocklists
 > ![image](https://user-images.githubusercontent.com/22477230/84682770-b8cb1d00-af68-11ea-8baa-6a24d84f02d6.png)
 
+下面直接给出AdGuardHome的配置文件filter部分，包含大量列表来源，适合懒人直接复制粘贴，请根据需要做出取舍。实际上一两个综合性的规则列表就已足够覆盖大部分情况，在过滤列表上完全没有必要贪多,使用过多列表反而更容易碰上误伤且不好排查具体来自哪个来源。
 
-
-
+```
+filters:
+- enabled: true
+  url: https://raw.githubusercontent.com/neoFelhz/neohosts/gh-pages/basic/hosts.txt
+  name: neohosts
+  id: 1
+- enabled: true
+  url: https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt
+  name: yhost
+  id: 2
+- enabled: true
+  url: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
+  name: 大圣净化
+  id: 3
+- enabled: true
+  url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
+  name: 乘风广告过滤规则
+  id: 4
+- enabled: true
+  url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
+  name: 乘风视频广告过滤
+  id: 5
+- enabled: true
+  url: https://gitee.com/cjx82630/cjxlist/raw/master/cjx-annoyance.txt
+  name: CJX’s Annoyance List
+  id: 6
+- enabled: true
+  url: https://easylist.to/easylist/easylist.txt
+  name: easylist
+  id: 7
+- enabled: true
+  url: https://easylist-downloads.adblockplus.org/easylistchina.txt
+  name: easylistchina
+  id: 8
+- enabled: true
+  url: https://easylist.to/easylist/easyprivacy.txt
+  name: easyprivacy
+  id: 9
+- enabled: true
+  url: https://easylist.to/easylist/fanboy-annoyance.txt
+  name: fanboy-annoyance
+  id: 10
+- enabled: true
+  url: https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+  name: ADgk
+  id: 11
+- enabled: true
+  url: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
+  name: Adblock Warning Removal List
+  id: 12
+- enabled: true
+  url: https://www.i-dont-care-about-cookies.eu/abp/
+  name: I don't care about cookies
+  id: 13
+- enabled: true
+  url: https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt
+  name: AdAway default blocklist
+  id: 14
+- enabled: true
+  url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+  name: AdGuard DNS filter
+  id: 15
+- enabled: true
+  url: https://someonewhocares.org/hosts/zero/hosts
+  name: Dan Pollock's List
+  id: 16
+- enabled: true
+  url: https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/adguard.txt
+  name: Scam Blocklist by DurableNapkin
+  id: 17
+- enabled: true
+  url: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt
+  name: Game Console Adblock List
+  id: 18
+- enabled: true
+  url: https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt
+  name: Perflyst and Dandelion Sprout's Smart-TV Blocklist
+  id: 19
+- enabled: true
+  url: https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext
+  name: Peter Lowe's List
+  id: 20
+- enabled: true
+  url: https://www.malwaredomainlist.com/hostslist/hosts.txt
+  name: MalwareDomainList.com Hosts List
+  id: 21
+- enabled: true
+  url: https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
+  name: NoCoin Filter List
+  id: 22
+- enabled: true
+  url: https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
+  name: Spam404
+  id: 23
+- enabled: true
+  url: https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hacked-domains.list
+  name: The Big List of Hacked Malware Web Sites
+  id: 24
+```
