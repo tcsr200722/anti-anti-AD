@@ -88,12 +88,12 @@ TLDR（太长不看版）：
 
 **最后推荐一些其它优秀且同样具有屏蔽广告、防止追踪等功能的列表：**
 
-- [neoFelhz/neohosts](https://github.com/neoFelhz/neohosts)  自由·负责·克制 去广告 Hosts 项目 
+- ~~[neoFelhz/neohosts](https://github.com/neoFelhz/neohosts)  自由·负责·克制 去广告 Hosts 项目~~ 缺乏维护
 - [ACL4SSR/ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)  SSR去广告规则/GFWList规则/Clash规则碎片
 - [AdGuard Simplified Domain names filter](https://github.com/AdguardTeam/AdGuardSDNSFilter/raw/gh-pages/Filters/rules.txt)  AdGuardHome 使用的默认列表
 - [AdAway](https://github.com/AdAway/adaway.github.io/raw/master/hosts.txt)  AdAway是使用hosts文件的Android开源广告拦截器
 - [malwaredomainlist](https://www.malwaredomainlist.com/hostslist/hosts.txt) malwaredomainlist恶意软件域列表是一个非商业社区项目
-- [vokins/yhosts](https://github.com/vokins/yhosts)  已由[VeleSila/yhosts](https://github.com/VeleSila/yhosts)接手
+- ~~[vokins/yhosts](https://github.com/vokins/yhosts)  已由[VeleSila/yhosts](https://github.com/VeleSila/yhosts)接手~~ 同样包含主观条目
 - [由 NextDNS 收集的各种用途的列表](https://github.com/nextdns/metadata/tree/master/privacy/blocklists)  也可在[NextDNS控制台](https://my.nextdns.io/xxxxxx/privacy)中查看
 
 
@@ -108,100 +108,105 @@ TLDR（太长不看版）：
 
 ```
 filters:
-- enabled: true
+- enabled: false
   url: https://raw.githubusercontent.com/neoFelhz/neohosts/gh-pages/basic/hosts.txt
   name: neohosts
-  id: 1
-- enabled: true
+  id: 1596593476
+- enabled: false
   url: https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt
   name: yhost
-  id: 2
+  id: 1596593477
 - enabled: true
   url: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
   name: 大圣净化
-  id: 3
+  id: 1596593478
 - enabled: true
   url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
   name: 乘风广告过滤规则
-  id: 4
+  id: 1596593479
 - enabled: true
   url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
   name: 乘风视频广告过滤
-  id: 5
+  id: 1596593480
 - enabled: true
   url: https://gitee.com/cjx82630/cjxlist/raw/master/cjx-annoyance.txt
   name: CJX’s Annoyance List
-  id: 6
+  id: 1596593481
 - enabled: true
   url: https://easylist.to/easylist/easylist.txt
   name: easylist
-  id: 7
+  id: 1596595437
 - enabled: true
   url: https://easylist-downloads.adblockplus.org/easylistchina.txt
   name: easylistchina
-  id: 8
+  id: 1596595441
 - enabled: true
   url: https://easylist.to/easylist/easyprivacy.txt
   name: easyprivacy
-  id: 9
+  id: 1596595438
 - enabled: true
   url: https://easylist.to/easylist/fanboy-annoyance.txt
   name: fanboy-annoyance
-  id: 10
+  id: 1596595439
 - enabled: true
   url: https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
   name: ADgk
-  id: 11
+  id: 1596595440
 - enabled: true
   url: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
   name: Adblock Warning Removal List
-  id: 12
+  id: 1596595442
 - enabled: true
   url: https://www.i-dont-care-about-cookies.eu/abp/
   name: I don't care about cookies
-  id: 13
+  id: 1596595443
 - enabled: true
   url: https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt
   name: AdAway default blocklist
-  id: 14
+  id: 1596596474
 - enabled: true
   url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   name: AdGuard DNS filter
-  id: 15
+  id: 1596596475
 - enabled: true
   url: https://someonewhocares.org/hosts/zero/hosts
   name: Dan Pollock's List
-  id: 16
+  id: 1596596476
 - enabled: true
   url: https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/adguard.txt
   name: Scam Blocklist by DurableNapkin
-  id: 17
+  id: 1596596477
 - enabled: true
   url: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt
   name: Game Console Adblock List
-  id: 18
+  id: 1596596478
 - enabled: true
   url: https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt
   name: Perflyst and Dandelion Sprout's Smart-TV Blocklist
-  id: 19
+  id: 1596596479
 - enabled: true
   url: https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext
   name: Peter Lowe's List
-  id: 20
+  id: 1596596480
 - enabled: true
   url: https://www.malwaredomainlist.com/hostslist/hosts.txt
   name: MalwareDomainList.com Hosts List
-  id: 21
+  id: 1596596481
 - enabled: true
   url: https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
   name: NoCoin Filter List
-  id: 22
+  id: 1596596482
 - enabled: true
   url: https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
   name: Spam404
-  id: 23
+  id: 1596596483
 - enabled: true
   url: https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hacked-domains.list
   name: The Big List of Hacked Malware Web Sites
-  id: 24
+  id: 1596596484
+whitelist_filters:
+- enabled: true
+  url: https://raw.githubusercontent.com/Mosney/AGHfilter/master/whitelist.txt
+  name: whitelist
+  id: 1596596485
 ```
