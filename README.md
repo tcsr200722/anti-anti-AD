@@ -87,14 +87,16 @@ TLDR（太长不看版）：
 [neoHost](https://github.com/neoFelhz/neohosts "neoHost")自由、克制、负责的理念，私甚以为然。不知各位看官看到这里是否依然选择继续使用这个夹杂着维护者个人喜好的“去广告列表”呢？这种行为跟**[yhost](https://github.com/vokins/yhosts)曾经**因个人喜恶屏蔽一号店、海信、魅族、Flyme、探探、淘宝、京东联盟等网站的[行为](https://github.com/vokins/yhosts/wiki/%E9%83%A8%E5%88%86%E9%97%AE%E9%A2%98%E8%AF%B4%E6%98%8E)别无二致。[gentlyxu](https://github.com/gentlyxu "gentlyxu")作为一个主打广告屏蔽和隐私保护列表的唯一维护者，在列表中暗自加料做替别人选择这种份外的事情居然还沾沾自喜，拿着大部分都是来源于其它既有列表的数据厚颜自我加冕，号称是“目前中文区命中率最高的广告过滤列表”，既无德也不知耻。你可能同我一样，正常情况下根本就不会去访问被[gentlyxu](https://github.com/gentlyxu "gentlyxu")“加料”的“轮媒”及其相关的网站，但是我依然持与对待GFW相同的观点：**我可以不去看，但我去看的权利不能被轻易剥夺。**
 
 **最后推荐一些其它优秀且同样具有屏蔽广告、防止追踪等功能的列表：**
-
-- ~~[neoFelhz/neohosts](https://github.com/neoFelhz/neohosts)  自由·负责·克制 去广告 Hosts 项目~~ 缺乏维护
+- [乘风广告过滤规则](https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt)
+- [乘风视频广告过滤](https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt)
+- [大圣净化](https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
 - [ACL4SSR/ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)  SSR去广告规则/GFWList规则/Clash规则碎片
 - [AdGuard Simplified Domain names filter](https://github.com/AdguardTeam/AdGuardSDNSFilter/raw/gh-pages/Filters/rules.txt)  AdGuardHome 使用的默认列表
 - [AdAway](https://github.com/AdAway/adaway.github.io/raw/master/hosts.txt)  AdAway是使用hosts文件的Android开源广告拦截器
 - [malwaredomainlist](https://www.malwaredomainlist.com/hostslist/hosts.txt) malwaredomainlist恶意软件域列表是一个非商业社区项目
-- ~~[vokins/yhosts](https://github.com/vokins/yhosts)  已由[VeleSila/yhosts](https://github.com/VeleSila/yhosts)接手~~ 同样包含主观条目
 - [由 NextDNS 收集的各种用途的列表](https://github.com/nextdns/metadata/tree/master/privacy/blocklists)  也可在[NextDNS控制台](https://my.nextdns.io/xxxxxx/privacy)中查看
+- ~~[neoFelhz/neohosts](https://github.com/neoFelhz/neohosts)  自由·负责·克制 去广告 Hosts 项目~~ `缺乏维护`
+- ~~[vokins/yhosts](https://github.com/vokins/yhosts)  已由[VeleSila/yhosts](https://github.com/VeleSila/yhosts)接手~~ `同样包含主观条目`
 
 
 ***若GitHub访问受限可使用具有中国大陆地区网络的[jsDelivr](http://www.jsdelivr.com/)加速列表源***  
