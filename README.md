@@ -11,9 +11,9 @@
 
 Update：
 --
-- [神奇的屏蔽条目](/AmazingEntries.md)
+- 反复横跳的[gentlyxu语录总结](/Quotations.md)
 - [其它质疑的声音](/OthersVoices.md) (仅限在404之前被记录下的)  
-- 反复横跳的[gentlyxu语录总结](Quotations.md)
+- [神奇的屏蔽条目](/AmazingEntries.md) (目前来源仅限issue区反馈出的，实际列表中还有多少这样的条目不得而知)
 - 相关讨论：
   - https://github.com/AdguardTeam/AdGuardHome/issues/1988
   - https://github.com/collinbarrett/FilterLists/issues/1674
